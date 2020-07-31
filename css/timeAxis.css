@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    white-space: nowrap;
+    margin: 0;
+}
+
+ul li {
+    outline: none;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+}
+
+.cx-time-main {
+    width: 50%;
+    height: 100px;
+    margin: 200px auto;
+}
+
+.cx-time-main > span {
+    width: 20px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(18, 175, 255);
+    cursor: pointer;
+    font-family: '宋体'
+}
+
+.cx-time-box {
+    float: left;
+    width: calc(100% - 42px);
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cx-time-box ul {
+    height: 100px;
+}
+
+.cx-round-box {
+    position: relative;
+    width: 12px;
+    height: 100%;
+}
+
+.cx-time-round {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+    background: rgba(18, 175, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cx-time-top {
+    position: absolute;
+    bottom: 50%;
+    left: -15px;
+    width: 40px;
+    min-height: 40px;
+    height: auto;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.cx-time-bottom {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 120px;
+    min-height: 20px;
+    height: auto;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.cx-time-line {
+    position: relative;
+    width: 150px;
+    height: 100%;
+}
+
+.cx-time-line:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background: linear-gradient(80deg, #7A88FF 0, #7AFFAF 100%);
+}
+
+.cx-time-round:hover, .cx-time-active .cx-time-round {
+    width: 16px;
+    height: 16px;
+    top: 49%;
+    left: -2px;
+    background: rgba(129, 71, 181, 0.8);
+}
+
+.cx-time-active > div {
+    color: rgb(129, 71, 181);
+}
+
+.cx-time-active .cx-time-top {
+    background-image: url('../images/point.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}

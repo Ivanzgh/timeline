@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timeline</title>
+    <link rel="stylesheet" type="text/css" href="./css/timeAxis.css">
+</head>
+<body>
+<div class="cx-time-main" id="cxTime">
+    <span><</span>
+    <div class="cx-time-box"><ul></ul></div>
+    <span>></span>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./js/timeAxis.js"></script>
+<script type="text/javascript">
+    let oTimeAxiosFun = null;
+    $(function () {
+        let timeList = [
+            {name: '00:00', time: '00:00'},
+            {name: '02:00', time: '02:00'},
+            {name: '04:00', time: '04:00'},
+            {name: '06:00', time: '06:00'},
+            {name: '08:00', time: '08:00'},
+            {name: '10:00', time: '10:00'},
+            {name: '12:00', time: '12:00'},
+            {name: '14:00', time: '14:00'},
+            {name: '16:00', time: '16:00'},
+            {name: '18:00', time: '18:00'},
+            {name: '20:00', time: '20:00'},
+            {name: '22:00', time: '22:00'}
+        ];
+        oTimeAxiosFun = new oTimeAxios(timeList);
+    })
+</script>
+</body>
+</html>
