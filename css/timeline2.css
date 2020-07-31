@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    outline: none;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+}
+
+.cx-time-main {
+    width: 50%;
+    height: 100px;
+    margin: 200px auto;
+}
+
+.cx-time-main > span {
+    width: 20px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(18, 175, 255);
+    cursor: pointer;
+    font-family: '宋体'
+}
+
+.cx-time-box {
+    float: left;
+    width: calc(100% - 42px);
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.cx-time-box ul {
+    height: 100px;
+}
+
+.cx-round-box {
+    position: relative;
+    width: 38px;
+    height: 100%;
+}
+
+.cx-time-top {
+    position: absolute;
+    left: 4px;
+    bottom: 40%;
+    width: 30px;
+    min-height: 40px;
+    height: auto;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.cx-time-bottom {
+    position: absolute;
+    top: 40%;
+    width: 40px;
+    min-height: 20px;
+    height: auto;
+    font-size: 14px;
+    cursor: pointer;
+    background-image:-webkit-linear-gradient(80deg, #7A88FF 0, #7AFFAF 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.cx-time-line {
+    position: relative;
+    width: 150px;
+    height: 100%;
+}
+
+.cx-time-line:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background: linear-gradient(80deg, #7A88FF 0, #7AFFAF 100%);
+}
+
+.cx-time-round:hover, .cx-time-active .cx-time-round {
+    color: rgb(129, 71, 181);
+}
+
+.cx-time-active .cx-time-top {
+    background-image: url('../images/point.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
